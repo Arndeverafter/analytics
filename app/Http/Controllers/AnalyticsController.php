@@ -31,17 +31,17 @@ class AnalyticsController extends Controller
 
         $data = collect(
             [
-                // 'UsersByDate' => LaravelGoogleAnalytics::getTotalUsersByDate(Period::days(7)),
-                // 'AverageSessionDuration' => LaravelGoogleAnalytics::getAverageSessionDuration(Period::days(7)),
-                // 'AverageSessionByDate' => LaravelGoogleAnalytics::getAverageSessionDurationByDate(Period::days(7)),
-                // 'MostUsersByCountry' => LaravelGoogleAnalytics::getMostUsersByCountry(Period::days(7)),
-                // 'MostUsersByCity' => LaravelGoogleAnalytics::getMostUsersByCity(Period::days(7)),
-                // 'TotalUsersByAge' => LaravelGoogleAnalytics::getTotalUsersByAge(Period::days(7)),
-                // 'TotalUsersByGender' => LaravelGoogleAnalytics::getTotalUsersByGender(Period::days(7)),
-                // 'MostUsersByLanguage' => LaravelGoogleAnalytics::getMostUsersByLanguage(Period::days(7)),
-                // 'TotalViews' => LaravelGoogleAnalytics::getTotalViews(Period::days(7)),
-                // 'NewVsReturning' => LaravelGoogleAnalytics::getTotalNewAndReturningUsers(Period::days(7)),
-                // 'ReturningUsersByDate' => LaravelGoogleAnalytics::getTotalNewAndReturningUsersByDate(Period::days(7)),
+                'UsersByDate' => LaravelGoogleAnalytics::getTotalUsersByDate(Period::days(7)),
+                'AverageSessionDuration' => LaravelGoogleAnalytics::getAverageSessionDuration(Period::days(7)),
+                'AverageSessionByDate' => LaravelGoogleAnalytics::getAverageSessionDurationByDate(Period::days(7)),
+                'MostUsersByCountry' => LaravelGoogleAnalytics::getMostUsersByCountry(Period::days(7)),
+                'MostUsersByCity' => LaravelGoogleAnalytics::getMostUsersByCity(Period::days(7)),
+                'TotalUsersByAge' => LaravelGoogleAnalytics::getTotalUsersByAge(Period::days(7)),
+                'TotalUsersByGender' => LaravelGoogleAnalytics::getTotalUsersByGender(Period::days(7)),
+                'MostUsersByLanguage' => LaravelGoogleAnalytics::getMostUsersByLanguage(Period::days(7)),
+                'TotalViews' => LaravelGoogleAnalytics::getTotalViews(Period::days(7)),
+                'NewVsReturning' => LaravelGoogleAnalytics::getTotalNewAndReturningUsers(Period::days(7)),
+                'ReturningUsersByDate' => LaravelGoogleAnalytics::getTotalNewAndReturningUsersByDate(Period::days(7)),
                 'ActiveUsers' => $this->getActiveUsers(1)
             ]
         );
